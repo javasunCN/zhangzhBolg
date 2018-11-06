@@ -1,13 +1,15 @@
 <nav class="pagination">
   <div class="page-links">
     {% if paginator.page == 1 %}
-        <a href="{{ "/" | relative_url }}" class="page-link" title="Index Page">1</a>
+      <!--
+        <a href="{{ '/' | relative_url }}" class="page-link" title="Index Page">1</a>
+        -->
     {% endif %}
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-            <a href="{{ "/" | relative_url }}" class="page-link" title="Previous Page">&laquo;</a>
+            <a href="{{ '/' | relative_url }}" class="page-link" title="Previous Page">&laquo;</a>
             {% else %}
-            <a href="/page{{ paginator.previous_page }}/" class="page-link" title="Previous Page">&laquo;</a>
+            <a href="{{site.baseurl}}/page{{ paginator.previous_page }}/" class="page-link" title="Previous Page">&laquo;</a>
         {% endif %}
     {% endif %}
     {% if paginator.next_page %}
@@ -16,13 +18,14 @@
             {% else %}
             <a href="/page{{ paginator.next_page }}/" class="page-link" title="Next Page">&raquo;</a>
         {% endif %} -->
-        <a href="/page{{ paginator.next_page }}/" class="page-link" title="Next Page">&raquo;</a>
+        <a href="{{site.baseurl}}/page{{ paginator.page }}/" class="page-link" title="Previous Page">{{ paginator.page }}</a>
+        <a href="{{site.baseurl}}/page{{ paginator.next_page }}/" class="page-link" title="Next Page">&raquo;</a>
     {% endif %}
     {% if paginator.page == paginator.total_pages %}
       {% if paginator.total_pages == 1 %}
-        <a href="{{ "/" | relative_url }}" class="page-link" title="No Next">\</a>
+        <a href="{{ '/' | relative_url }}" class="page-link" title="No Next">\</a>
       {% else %}
-        <a href="/page{{ paginator.page }}" class="page-link" title="Final Page">{{ paginator.page }}</a>
+        <a href="{{site.baseurl}}/page{{ paginator.page }}" class="page-link" title="Final Page">{{ paginator.page }}</a>
       {% endif %}
     {% endif %}
   </div>

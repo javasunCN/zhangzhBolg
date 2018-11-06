@@ -36,7 +36,7 @@ description:
         <li  class="fadeInUp animated" id="media">
           {% for post in site.posts %}
             <div class="timeANDname">
-              <a href="{{ post.url }}"><span class="timeANDname-san"></span><span class="timeANDname-main"><sapn class="timeANDnamemain">
+              <a href="{{site.baseurl}}{{ post.url }}"><span class="timeANDname-san"></span><span class="timeANDname-main"><sapn class="timeANDnamemain">
                   {{ post.title }}
                   <time class="timeline-data" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date: "%Y-%m-%d" }}</time>
               </sapn></span></a>
@@ -47,4 +47,4 @@ description:
 </main>
 {% include footer.html %}
 
-<script src="/assets/js/main.js"></script>
+<script src="{{site.baseurl}}/assets/js/main.js"></script>
