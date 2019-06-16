@@ -5,12 +5,15 @@ keywords: 'java, go, 技术'
 url: 'https://javasuncn.github.io/zhangzhBolg/'
 # 监听端口
 port: 9898
+## 注意:文件夹名称不能为中文
 encoding: UTF-8
 timezone: Asia/Shanghai
 baseurl: "/zhangzhBolg"
 # 改变文件写入的目录
 destination: blog
 meta_description: 张志宏;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
+
+## https://pan.baidu.com/s/1HuN8mfMjCDbi1EmjSWRMaA#list/path=%2F&parentPath=%2F 提取码:7XO9
 
 
 ##### 命令
@@ -67,7 +70,7 @@ paginatepath: ['page:num']
 
 # since
 footer:
-  since: 2018
+  since: 2019
 
 # Markdown
 markdown: kramdown
@@ -108,4 +111,4 @@ google: false
 google-ID: ''
 
 # 博客头信息备选颜色（该部分在站点中不充当站点变量，将其写在post的头信息中用来充当页面变量）
-color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255) rgb(135,206,235) rgb(135,206,250) rgb(72,209,204) rgb(255,69,0) rgb(255,222,173) rgb(144,238,144) rgb(77,155,37) rgb(0,0,0)
+color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255) rgb(135,206,235) rgb(135,206,250) rgb(72,209,204) rgb(255,69,0) rgb(255,222,173) rgb(144,238,144) rgb(77,155,37) rgb(0,0,0) rgb(101,196,214) rgb(26,62,110) rgb(247,154,0)
